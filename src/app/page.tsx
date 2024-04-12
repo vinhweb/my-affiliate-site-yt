@@ -47,7 +47,7 @@ export default function Home() {
                 <div className={'relative aspect-square w-full'}>
                   <Image src={`/images/products/image_${index}.png`} alt={product.title} fill={true} />
                 </div>
-                <p>{product.title}</p>
+                <p className={'line-clamp-2'}>{product.title}</p>
                 <p className={'text-3xl font-bold'}>{product.price.toLocaleString('vi-VN')}.000đ</p>
               </Link>
             </Fragment>
